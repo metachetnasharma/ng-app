@@ -1,0 +1,22 @@
+<div *ngIf="book">
+  <button md-button (click)="goBack()"><i class="material-icons">keyboard_backspace</i> Back</button>
+  <md-list>
+    <h2 md-subheader>{{book.name}} details</h2>
+    <md-list-item>
+      <img class="book-img" md-card-image src="assets/images/books/{{book.imgUrl}}">
+      <h3 md-line>{{book.name}}</h3>
+      <p md-line class="author-name">- by {{book.author}} </p>
+        <p class="details" md-line ><b>Genre:</b> {{book.genre}}</p>
+        <p class="details" md-line><b>Price:</b> {{book.price}} rs </p>
+        <p class="details" md-line><b>Pages:</b> {{book.pages}} </p>
+    </md-list-item>
+    <md-list-item class="review">
+        <form>
+          <md-form-field>
+            <textarea mdInput placeholder="Review" [(ngModel)]="book.review" name="review"></textarea>
+          </md-form-field>
+          <!-- <button md-button class= "save-btn"(click)="save(book.review)">Save</button> -->
+        </form>
+    </md-list-item>
+  </md-list>
+</div>

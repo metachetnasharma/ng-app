@@ -1,0 +1,21 @@
+a{
+  cursor: pointer;
+}
+.img-thumb{
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+}
+md-card-title-group{
+  width: 100%;
+}
+.heading{
+  padding-left: 5%;
+}
+.full-width{
+  width: 85%;
+  margin-left: 5%;
+}
+.search-by-name{
+  width:100%;
+}

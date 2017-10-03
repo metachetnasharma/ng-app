@@ -1,0 +1,22 @@
+<div *ngIf="data.isUserLoggedIn">
+  <h2 class="heading"> Books
+  </h2>
+  <form class="search-form">
+    <md-form-field class="full-width">
+      <input mdInput placeholder="Search book by name" [(ngModel)]="searchText" name="search">
+    </md-form-field>
+  </form>
+  <md-card  class="books-card full-width" *ngFor="let book of books | searchFilter: 'name' : searchText">
+    <md-card-header>
+      <md-card-title-group>
+      <img md-card-sm-image class="img-thumb" md-card-image src="assets/images/books/{{book.imgUrl}}">
+      <md-card-title>
+        <a (click)="gotoDetail(book)" >
+          {{ book.name}}
+        </a>
+      </md-card-title>
+      <md-card-subtitle>{{book.author}}</md-card-subtitle>
+    </md-card-title-group>
+    </md-card-header>
+  </md-card>
+</div>

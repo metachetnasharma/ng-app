@@ -1,0 +1,10 @@
+<md-toolbar class="fixed-header" color="primary">
+<span>My app</span>
+<span class="example-spacer"></span>
+<button md-button *ngIf="data.isUserLoggedIn" [mdMenuTriggerFor]="appMenu"><i class="material-icons">account_circle</i></button>
+<button md-button *ngIf="!data.isUserLoggedIn" (click)="login()"> Login </button>
+</md-toolbar>
+<md-menu #appMenu="mdMenu">
+<button md-menu-item> Settings </button>
+<button md-menu-item (click)="signOut()"> Logout</button>
+</md-menu>

@@ -1,0 +1,32 @@
+.book-img{
+  height: 160px;
+  width: 120px;
+  padding-right: 5%;
+}
+.author-name{
+  color: #636c72
+}
+.mat-line{
+  margin: 2px!important;
+}
+md-form-field{
+  width: 100%!important;
+}
+.review{
+  margin-top: 5%;
+}
+form{
+  width: 100%;
+}
+.mat-list .mat-subheader, .mat-nav-list .mat-subheader, .mat-selection-list .mat-subheader{
+  font-size: 1.5em;
+  line-height: 21px;
+}
+.details{
+  margin-top: 10px!important;
+  margin-left: 10px!important;
+}
+md-list{
+  width: 85%;
+  margin-left: 5%;
+}
